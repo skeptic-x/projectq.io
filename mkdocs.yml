@@ -1,0 +1,90 @@
+site_name: projectQ
+theme:
+  name: material
+  # name: null
+  # custom_dir: material
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - header.autohide
+    - content.code.annotate
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - toc.integrate
+    # - navigation.top
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: slate
+      primary: orange
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    # Palette toggle for dark mode
+    - scheme: default
+      primary: orange
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Space Grotesk
+    code: Space Mono
+  favicon: faviconQ.png
+  icon:
+    # logo: fontawesome/brands/quinscape
+    # logo: fontawesome/solid/book-quran
+    logo: fontawesome/solid/book-skull
+    # logo: fontawesome/solid/book
+    # logo: fontawesome/solid/q
+    # logo: material/head-question-outline
+
+markdown_extensions:
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      auto_title: false
+      linenums: true
+      linenums_style: pymdownx-inline
+  - pymdownx.superfences:
+        custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+
+plugins:
+  - search
+
+
+copyright: Copyright &copy; 2022 projectq.io
+extra:
+  generator: true
+
+# Navigation
+# nav:
+#   - Welcome:
+#     - About the site: index.md
