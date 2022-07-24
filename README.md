@@ -14,4 +14,4 @@
 # Serve Site
 `mkdocs serve`
 # Deploy Site
-`mkdocs gh-deploy -c -m "projectq.io website update." --force --no-history -t "material"`
+`mkdocs gh-deploy -c -m "projectq.io website update." --force --no-history`
