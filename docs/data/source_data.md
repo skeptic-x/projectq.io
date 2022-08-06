@@ -5,7 +5,7 @@
 The ‘Source Data’ here means chapters and verses from Quran available for users to download in various formats.  Check out [Getting Started](../getting_started) to see how you can pull this data using Python.
 
 ## Chapters
-:material-web: `https://projectq.io/data/source/chapters.json`
+[:material-web:](../../data/source/chapters.json) `https://projectq.io/data/source/chapters.json`
 
 This dataset is a JSON list of dictionaries, where each dictionary has data on chapters, see example record below:
 === "Example record"
@@ -104,7 +104,7 @@ This dataset is a JSON on individual verss's data and includes multi-lingual tra
     Please see 'Reading Individual Verses with Multilingual Translations' in [Getting Started](../getting_started/#reading-individual-verses-with-multilingual-translations) 
 
 ## All Verses with Extended Translations
-:material-web: `https://projectq.io/data/source/verses.json`  
+[:material-web:](../../data/source/verses.json) `https://projectq.io/data/source/verses.json`  
 
 This dataset is a JSON list of dictionaries, where each dictionary has data on verses including multiple translations in english, see example record below:
 
