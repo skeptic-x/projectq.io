@@ -63,6 +63,7 @@ markdown_extensions:
   - def_list
   - meta
   - tables
+  - pymdownx.critic
   - pymdownx.highlight:
       anchor_linenums: true
       use_pygments: true
@@ -105,3 +106,4 @@ nav:
     - projects/index.md
     - An-Nisa: 
       - projects/an-nisa/index.md
+      - Initial Tagging: projects/an-nisa/Initial_tagging.ipynb
