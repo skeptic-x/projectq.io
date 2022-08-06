@@ -16,7 +16,7 @@ This projects attempts to answer questions around Chapter 4, An-Nisa, specifical
 
 === "Source"
 
-    Verses were analyzed to find anhy that mention synonyms of women.  Please see [Initial Tagging](initial_tagging) for full details.
+    Verses were analyzed to find anhy that mention synonyms of women.  Please see [Initial Tagging](Initial_tagging) for full details.
 
 === "Tagged Data"
 
