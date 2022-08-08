@@ -15,3 +15,13 @@
 `mkdocs serve`
 # Deploy Site
 `mkdocs gh-deploy -c -m "projectq.io website update." --force --no-history`
+
+
+# NOCODB
+create '.env' file in `nocodb` with 
+```shell
+POSTGRES_PASSWORD=some-password
+```
+`cd nocodb`  
+`docker-compose up -d`  
+

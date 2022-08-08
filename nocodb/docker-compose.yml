@@ -1,0 +1,44 @@
+version: '2.1'
+
+services:
+  projectq_db:
+    image: postgres:14.4
+    restart: always
+    volumes:
+      - pq_db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_USER: postgres
+      POSTGRES_DB: projectq_db
+    ports:
+      - "5433:5432"
+  root_db:
+    image: postgres:14.4
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_USER: postgres
+      POSTGRES_DB: root_db
+    healthcheck:
+      test: pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"
+      interval: 10s
+      timeout: 2s
+      retries: 10
+  nocodb:
+    depends_on:
+      root_db:
+        condition: service_healthy
+    image: nocodb/nocodb:0.92.4
+    ports:
+      - "80:8080"
+    restart: always
+    volumes:
+      - nc_data:/usr/app/data
+    environment:
+      NC_DB: "pg://root_db:5432?u=postgres&p=${POSTGRES_PASSWORD}&d=root_db"
+volumes:
+  db_data: {}
+  nc_data: {}
+  pq_db_data: {}
