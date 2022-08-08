@@ -20,7 +20,9 @@
 # NOCODB
 create '.env' file in `nocodb` with 
 ```shell
-POSTGRES_PASSWORD=some-password
+POSTGRES_PASSWORD=some-db-password
+NC_ADMIN_PASSWORD=some-ui-password
+NC_AUTH_JWT_SECRET=some-jwt-secret
 ```
 `cd nocodb`  
 `docker-compose up -d`  

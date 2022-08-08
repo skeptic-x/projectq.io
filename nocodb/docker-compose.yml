@@ -38,6 +38,10 @@ services:
       - nc_data:/usr/app/data
     environment:
       NC_DB: "pg://root_db:5432?u=postgres&p=${POSTGRES_PASSWORD}&d=root_db"
+      NC_ADMIN_EMAIL: admin@projectq.io
+      NC_ADMIN_PASSWORD: ${NC_ADMIN_PASSWORD}
+      NC_INVITE_ONLY_SIGNUP: not_allowed
+      NC_AUTH_JWT_SECRET: ${NC_AUTH_JWT_SECRET}
 volumes:
   db_data: {}
   nc_data: {}
