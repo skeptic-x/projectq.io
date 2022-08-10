@@ -32,7 +32,7 @@ services:
         condition: service_healthy
     image: nocodb/nocodb:0.92.4
     ports:
-      - "80:8080"
+      - "8080:8080"
     restart: always
     volumes:
       - nc_data:/usr/app/data
