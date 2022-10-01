@@ -1,5 +1,5 @@
 site_name: projectQ
-repo_url: https://github.com/skeptic-x/projectq.io
+# repo_url: https://github.com/skeptic-x/projectq.io
 repo_name: project.io
 edit_uri: ""
 
@@ -99,11 +99,38 @@ extra:
 # Navigation
 nav:
   - About the site: index.md
-  - Source Data: 
-    - data/source_data.md
-    - Getting Started: data/getting_started.ipynb
-  - Projects:
-    - projects/index.md
-    - An-Nisa: 
-      - projects/an-nisa/index.md
-      - Initial Tagging: projects/an-nisa/Initial_tagging.ipynb
+  - An-Nisa: an-nisa.md
+  - "4:1": 4.1.md
+  - "4:3": 4.3.md
+  - "4:4": 4.4.md
+  - "4:7": 4.7.md
+  - "4:11": 4.11.md
+  - "4:12": 4.12.md
+  - "4:15": 4.15.md
+  - "4:16": 4.16.md
+  - "4:19": 4.19.md
+  - "4:20": 4.20.md
+  - "4:22": 4.22.md
+  - "4:23": 4.23.md
+  - "4:24": 4.24.md
+  - "4:25": 4.25.md
+  - "4:32": 4.32.md
+  - "4:34": 4.34.md
+  - "4:35": 4.35.md
+  - "4:43": 4.43.md
+  - "4:57": 4.57.md
+  - "4:75": 4.75.md
+  - "4:98": 4.98.md
+  - "4:124": 4.124.md
+  - "4:127": 4.127.md
+  - "4:128": 4.128.md
+  - "4:129": 4.129.md
+  - "4:176": 4.176.md
+  # - Source Data: 
+  #   - data/source_data.md
+  #   - Getting Started: data/getting_started.ipynb
+  # - Projects:
+  #   - projects/index.md
+  #   - An-Nisa: 
+  #     - projects/an-nisa/index.md
+  #     - Initial Tagging: projects/an-nisa/Initial_tagging.ipynb

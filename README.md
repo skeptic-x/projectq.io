@@ -8,7 +8,8 @@
 `pip install -r requirements.txt`
 
 # Misc
-
+https://projectq.io/data/source/verses.csv
+https://raw.githubusercontent.com/skeptic-x/projectq.io/gh-pages/data/source/verses.csv
 # Build Site
 `mkdocs build`
 # Serve Site
